@@ -7,8 +7,6 @@ plugins {
 group = 'quizzer'
 version = '0.0.1-SNAPSHOT'
 
-
-
 allprojects {
     apply plugin: 'java'
 
@@ -36,12 +34,14 @@ allprojects {
     }
 }
 
-
-
 dependencies {
     implementation(
             project(":api-http"),
             "org.springframework.boot:spring-boot-starter:$springBootVersion"
+    )
+
+    testImplementation(
+            "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
     )
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 
