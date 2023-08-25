@@ -10,5 +10,10 @@ dependencyResolutionManagement {
 rootProject.name = 'backend'
 
 include ':api-http'
-
 project(':api-http').projectDir = file('modules/api/http')
+
+include ':auth'
+project(':auth').projectDir = file('modules/auth')
+
+include ':spi'
+project(':spi').projectDir = file('modules/spi')

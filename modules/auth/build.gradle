@@ -1,0 +1,6 @@
+dependencies {
+    implementation(
+            "org.springframework:spring-context:$springFrameworkVersion",
+            "org.springframework.security:spring-security-crypto:6.1.2"
+    )
+}

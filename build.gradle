@@ -14,12 +14,6 @@ allprojects {
         sourceCompatibility = '17'
     }
 
-    configurations {
-        compileOnly {
-            extendsFrom annotationProcessor
-        }
-    }
-
     dependencies {
         compileOnly (
                 "org.projectlombok:lombok:$lombokVersion"
@@ -37,14 +31,12 @@ allprojects {
 dependencies {
     implementation(
             project(":api-http"),
+            project(":spi"),
             "org.springframework.boot:spring-boot-starter:$springBootVersion"
     )
 
     testImplementation(
             "org.springframework.boot:spring-boot-starter-test:$springBootVersion"
     )
-	//implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-
-	//runtimeOnly 'org.postgresql:postgresql'
 }
 

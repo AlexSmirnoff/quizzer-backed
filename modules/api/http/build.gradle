@@ -1,7 +1,9 @@
 dependencies {
     implementation(
+            project(":auth"),
             "org.springframework.boot:spring-boot-starter-security:$springBootVersion",
-            "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+            "org.springframework.boot:spring-boot-starter-web:$springBootVersion",
+            'org.bouncycastle:bcprov-jdk18on:1.76'
     )
     testImplementation(
             "org.springframework.boot:spring-boot-starter-test:$springBootVersion",

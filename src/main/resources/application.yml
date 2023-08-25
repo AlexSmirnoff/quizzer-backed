@@ -1,1 +1,12 @@
+argon2:
+  saltLength: ${ARGON2_SALT_LENGTH:128}
+  hashLength: ${ARGON2_HASH_LENGTH:128}
+  parallelism: ${ARGON2_PARALLELISM:1}
+  memory: ${ARGON2_MEMORY:60000}
+  iterations: ${ARGON2_ITERATIONS:10}
 
+spring:
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/quizzer}
+    username: ${POSTGRES_USERNAME:user}
+    password: ${POSTGRES_PASSWORD:password}

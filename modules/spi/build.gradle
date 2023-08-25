@@ -1,0 +1,10 @@
+dependencies {
+    implementation (
+            project(":auth"),
+            "org.springframework.boot:spring-boot-starter-data-jdbc:$springBootVersion"
+    )
+    runtimeOnly (
+            "org.flywaydb:flyway-core:9.21.2",
+            "org.postgresql:postgresql:$postgresVersion"
+    )
+}
