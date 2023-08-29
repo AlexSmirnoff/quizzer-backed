@@ -40,3 +40,7 @@ dependencies {
     )
 }
 
+bootJar {
+    archiveFileName = 'quizzer-backend.jar'
+}
+

@@ -1,3 +1,5 @@
+create schema auth;
+
 create table auth.users
 (
     id       bigint primary key generated always as identity,
